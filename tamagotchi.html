@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Game tamagotchi</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="estilo.css">
-  </head>
-  <body>
-  <div id="bloco">
-    <div id="blocoImagem">
-      <img src="img/spo.gif" class="pet" id="pet" alt="imagem">
+</head>
+
+<body>
+    <div id="bloco">
+        <div id="blocoImagem">
+            <img src="img/spo.gif" class="pet" id="pet" alt="imagem">
+        </div>
+        <div class="lado">
+            <h4><strong>Status:</strong></h4>
+            <h4>Fome:
+                <div id="fome" class="barra"> 100%</div>
+                Higiene:
+                <div id="higiene" class="barra"> 100%</div>
+                Sono:
+                <div id="sono" class="barra"> 100%</div>
+                Diversão:
+                <div id="diversao" class="barra"> 100%</div>
+                Saude:
+                <div id="Saude" class="barra"> 100%</div>
+
+        </div>
+        <div id="blocoBotao">
+            <p><span class="botao" onclick="Comer(15)">Comer</span></p>
+            <p><span class="botao" onclick="Banho(15)">Banho</span></p>
+            <p><span class="botao" onclick="Dormir(15)">Dormir</span></p>
+            <p><span class="botao" onclick="Brincar(15)">Brincar</span></p>
+            <p><span class="botao" onclick="Remedio(15)">Remedio</span></p>
+
+        </div>
+        <h3>
+            <div id="mensagem"></div>
+        </h3>
     </div>
-    <div class="lado"><h4><strong>Status:</strong></h4>
-      <h4>Fome:<div id="fome" class="barra"> 100%</div>
-      Higiene:<div id="higiene" class="barra"> 100%</div>
-      Sono:<div id="sono" class="barra"> 100%</div>
-      Diversão:<div id="diversao" class="barra"> 100%</div>
-      
-    </div>
-    <div id="blocoBotao">
-      <p><span class="botao" onclick="Comer(15)">Comer</span></p>
-      <p><span class="botao" onclick="Banho(15)">Banho</span></p>
-      <p><span class="botao" onclick="Dormir(15)">Dormir</span></p>
-      <p><span class="botao" onclick="Brincar(15)">Brincar</span></p>
-      
-    </div>
-    <h3><div id="mensagem"></div></h3>
-  </div>
-  <script src="script.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
+
 </html>
