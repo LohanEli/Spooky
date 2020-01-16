@@ -83,6 +83,11 @@ function Remedio() {
     document.getElementById('Saude').style.width = Saude + 'px';
 }
 
+function Dano() {
+    Saude = 70;
+    document.getElementById('Saude').innerHTML = Saude - '%';
+    document.getElementById('Saude').style.width = Saude - 'px';
+}
 
 
 Start();
