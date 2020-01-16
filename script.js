@@ -16,11 +16,11 @@ function Loop(time = 3) {
     } else if (total > 400) {
         document.getElementById("pet").src = "img/spo.gif";
     } else if (total > 300) {
-        document.getElementById("pet").src = "img/spo.gif";
-    } else if (total > 200) {
-        document.getElementById("pet").src = "img/spo.gif";
-    } else if (total > 100) {
         document.getElementById("pet").src = "img/spo3.gif";
+    } else if (total > 200) {
+        document.getElementById("pet").src = "img/spo3.gif";
+    } else if (total > 100) {
+        document.getElementById("pet").src = "img/s.gif";
     } else if (total > 50) {
         document.getElementById("pet").src = "img/spo2.gif";
     }
